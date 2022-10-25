@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  overflow-y: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+  position: absolute;
+  width: 720px;
+  height: 899.82px;
+}
+
+
+.form {
+  float: right;
+  width: 720px;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 720px;
+}
+
+.form *{
+  outline: none;
+}
+
+
+.form__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px 0px 30px 0px;
+  line-height: 35px;
+  
+}
+
+.form__item {
+  margin: 0px 0px 20px 0px;
+}
+
+.form__label {
+  font-size: 16px;
+  display: block;
+  margin: 0px 0px 10px 0px;
+  color: #4A5568;
+}
+
+.form__input {
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  width: 350px;
+  font-size: 18px;
+  border: 1px solid #E8E8E8;
+  transition: all 0.5s ease 0s;
+}
+
+.form__input:focus {
+  box-shadow: 0 0 15px #7a956b;
+}
+
+.form__input._error  {
+  box-shadow: 0 0 15px red;
+}
+
+.checkbox {
+  font-size: 14px;
+  margin-top: 28px;
+}
+
+.checkbox__label {
+  color: #2D3748;
+}
+  
+
+a {
+  color: #2C5282 !important;
+  margin-left: 120px;
+  text-decoration: none;
+}
+
+.a {
+  color: #fff !important;
+  margin-right: 95px;
+  position: absolute;
+}
+
+.form__button {
+  margin-top: 27px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  background-color: #04C45C;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 19px;
+  transition: background-color 0.5s ease 0s;
+  border: none;
+  
+}
+
+.form__button:hover {
+  background-color: #025a2b;
+}
+
+
+
+.icon {
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 70px;
+}
+
+
+.form__button_two {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  background-color: #2D3748;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 19px;
+  transition: background-color 0.5s ease 0s;
+  margin-top: 15px;
+  border: none;
+}
+
+.form__button_two:hover {
+  background-color: #4773bd;
+}
